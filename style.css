@@ -194,16 +194,21 @@ width: 50%;
 margin: 20px 0;
 }
 
+
 footer {
 text-align: center;
 background: url("img/bg.jpg");
 padding: 40px 0;
 }
 
+.logofooter {
+    width: 30%;
+}
+
 .copyright {
 color: #FFFFFF;
 font-size: 13px;
-margin: 20px 0 0;
+margin: 10px 0 0;
 }
 
 .enviar {
