@@ -16,8 +16,8 @@ text-align: center;
 font-size: 2em;
 margin: 0 0 1em;
 clear: left;
+ width: 120px;
 }
-
 .principal {
 padding: 3em 0;
 background: #FEFEFE;
@@ -306,3 +306,4 @@ img ~ p {
     .lista-beneficios, .imagem-beneficios {
         width: 100%;
     }
+    
