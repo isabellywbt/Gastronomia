@@ -209,6 +209,7 @@ padding: 40px 0;
 .copyright {
 color: #FFFFFF;
 font-size: 13px;
+margin: 20px 0 0;
 margin: 10px 0 0;
 }
 
@@ -311,5 +312,7 @@ img ~ p {
 
     .lista-beneficios, .imagem-beneficios {
         width: 100%;
+
     }
+    ~
     
