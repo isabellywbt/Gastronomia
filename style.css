@@ -195,15 +195,14 @@ width: 50%;
 margin: 20px 0;
 }
 
-
 footer {
 text-align: center;
-background: url("img/bg.jpg");
-padding: 40px 0;
+background: #313030;
+ padding: 0 0;
 }
 
 .logofooter {
-    width: 30%;
+    width: 50%;
 }
 
 .copyright {
