@@ -1,6 +1,5 @@
-@@ -1,307 +1,309 @@
 body {
-font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -17,8 +16,9 @@ text-align: center;
 font-size: 2em;
 margin: 0 0 1em;
 clear: left;
-+ width: 120px;
+width: 100%;
 }
+
 .principal {
 padding: 3em 0;
 background: #FEFEFE;
@@ -148,7 +148,7 @@ line-height: 1.5;
 }
 
 .itens:first-child {
-font-weight: bold;
+content: "✓";
 }
 
 .itens:before {
