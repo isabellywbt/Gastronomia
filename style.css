@@ -120,10 +120,16 @@ nav a:hover {
     border-radius: 10px;
 }
 
+
+.produto li:hover {
+    border-color: #ec94a1;
 .produto li:hover {
     border-color: var(--cor-principal);
 }
 
+
+.produto li:active {
+    border-color: #ffd770;
 .produto li:active {
     border-color: var(--cor-preto);
 }
