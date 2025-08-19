@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background: #000000;
+    background: #ffffff;
     padding: 20px 0;
 }
 
@@ -32,7 +32,7 @@ header {
 
 .principal {
     padding: 3em 0;
-    background: var(--cor-preto);
+    background: var(--cor-branco);
     width: 940px;
     margin: 0 auto;
 }
@@ -102,13 +102,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.produtos {
+.produto {
     width: 940px;
     margin: 0 auto;
     padding: 50px 0;
 }
 
-.produtos li {
+.produto li {
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -120,20 +120,20 @@ nav a:hover {
     border-radius: 10px;
 }
 
-.produtos li:hover {
+.produto li:hover {
     border-color: var(--cor-principal);
 }
 
-.produtos li:active {
+.produto li:active {
     border-color: var(--cor-preto);
 }
 
-.produtos h2 {
+.produto h2 {
     font-size: 30px;
     font-weight: bold;
 }
 
-.produtos li:hover h2 {
+.produto li:hover h2 {
     font-size: 34px;
 }
 
@@ -149,7 +149,7 @@ nav a:hover {
 
 .beneficios {
     padding: 3em 0;
-    background: #888888;
+    background: #ffffff;
     background: var(--cor-secundaria);
 }
 
@@ -222,7 +222,7 @@ form input {
 
 footer {
     text-align: center;
-    background: #313030;
+    background: #ffffff;
     padding: 0 0;
 }
 
@@ -260,19 +260,19 @@ table {
 }
 
 thead {
-    background: #555555;
+    background: #ffffff;
     color: white;
     font-weight: bold;
 }
 
 td, th {
-    border: 1px solid #000000;
+    border: 1px solid #C78BA7;
     padding: 8px 15px;
 }
 
 .mapa {
     padding: 3em 0;
-    background-color: linear-gradient(#FEFEFE, #888888);
+    background-color: linear-gradient(#ffffff, #C78BA7);
 }
 
 .mapa p {
