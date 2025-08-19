@@ -1,9 +1,20 @@
+:root {
+    /* cores personalisadas */
+    --cor-principal:#C78BA7;
+    --cor-rosa:#ec94a1;
+    --secundaria:#ffa392;
+    --cor-laranja:#ffd770;
+    --cor-amarelo:#f9f871;
+    --cor-branco:#ffffff;
+    --cor-preto:#000000;
+    }
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    background: #BBBBBB;
+    background: #000000;
     padding: 20px 0;
 }
 
@@ -21,7 +32,7 @@ header {
 
 .principal {
     padding: 3em 0;
-    background: #FEFEFE;
+    background: var(--cor-preto);
     width: 940px;
     margin: 0 auto;
 }
@@ -49,7 +60,7 @@ header {
 }
 
 .caixa {
- display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -69,7 +80,6 @@ header {
 }
 
 nav {
-    position: absolute;
     top: 110px;
     right: 0;
 }
@@ -81,14 +91,14 @@ nav li {
 
 nav a {
     text-transform: uppercase;
-    color: #000000;
+    color: var(--cor-preto);
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #C78C19;
+    color: var(--cor-principal);
     text-decoration: underline;
 }
 
@@ -111,11 +121,11 @@ nav a:hover {
 }
 
 .produtos li:hover {
-    border-color: #ec94a1;
+    border-color: var(--cor-principal);
 }
 
 .produtos li:active {
-    border-color: #ffd770;
+    border-color: var(--cor-preto);
 }
 
 .produtos h2 {
@@ -139,7 +149,8 @@ nav a:hover {
 
 .beneficios {
     padding: 3em 0;
-    background: #ffa392;
+    background: #888888;
+    background: var(--cor-secundaria);
 }
 
 .conteudo-beneficios {
@@ -172,7 +183,7 @@ nav a:hover {
 .imagem-beneficios {
     width: 60%;
     opacity: 1;
-    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 var(--cor-preto);
     box-shadow: 10px 10px 10px 0 #000000;
 }
 
@@ -211,7 +222,7 @@ form input {
 
 footer {
     text-align: center;
-    background: #C78BA7;
+    background: #313030;
     padding: 0 0;
 }
 
@@ -219,8 +230,7 @@ footer {
     width: 50%;
 }
 
-.copyright {
-    color: #FFFFFF;
+color: var(--cor-branco);
     font-size: 13px;
     margin: 10px 0 0;
 }
@@ -228,8 +238,10 @@ footer {
 .enviar {
     width: 40%;
     padding: 15px 0;
-    background: #000000;
-    color: white;
+     background: var(--cor-principal);
+    color: var(--cor-branco);
+    background: var(--cor-principal);
+    color: var(--cor-branco);
     font-weight: bold;
     font-size: 18px;
     border: none;
@@ -239,7 +251,7 @@ footer {
 }
 
 .enviar:hover {
-    background: black;
+    background: darkorange;
     transform: scale(1.2);
 }
 
@@ -248,19 +260,19 @@ table {
 }
 
 thead {
-    background: #000000;
+    background: #555555;
     color: white;
     font-weight: bold;
 }
 
 td, th {
-    border: 1px solid #C78BA7;
+    border: 1px solid #000000;
     padding: 8px 15px;
 }
 
 .mapa {
     padding: 3em 0;
-    background-color: linear-gradient(#C78BA7, #000000);
+    background-color: linear-gradient(#FEFEFE, #888888);
 }
 
 .mapa p {
@@ -285,19 +297,19 @@ td, th {
 /* SELETORES AVANÇADOS PARA SEREM USADOS
 
 main p {
-    background: black;
+    background: red;
 }
 
 main > p {
-    background: black; 
+    background: red; 
 }
 
 img + p { 
-    background: yellow;
+    background: blue;
 }
 
 img ~ p {
-    background: white
+    background: yellow
 } 
 
 .principal p:not(#missao) {
@@ -322,6 +334,4 @@ img ~ p {
     .lista-beneficios, .imagem-beneficios {
         width: 100%;
     }
-
-}
 ~
