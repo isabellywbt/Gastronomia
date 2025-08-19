@@ -49,9 +49,23 @@ header {
 }
 
 .caixa {
+ display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     width: 940px;
     margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.header-logo {
+    width: 70px;
+    margin-right: 10px;
 }
 
 nav {
@@ -97,11 +111,11 @@ nav a:hover {
 }
 
 .produtos li:hover {
-    border-color: #C78C19;
+    border-color: #ec94a1;
 }
 
 .produtos li:active {
-    border-color: #088C19;
+    border-color: #ffd770;
 }
 
 .produtos h2 {
@@ -125,7 +139,7 @@ nav a:hover {
 
 .beneficios {
     padding: 3em 0;
-    background: #888888;
+    background: #ffa392;
 }
 
 .conteudo-beneficios {
@@ -197,7 +211,7 @@ form input {
 
 footer {
     text-align: center;
-    background: #313030;
+    background: #C78BA7;
     padding: 0 0;
 }
 
@@ -214,7 +228,7 @@ footer {
 .enviar {
     width: 40%;
     padding: 15px 0;
-    background: orange;
+    background: #000000;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -225,7 +239,7 @@ footer {
 }
 
 .enviar:hover {
-    background: darkorange;
+    background: black;
     transform: scale(1.2);
 }
 
@@ -234,19 +248,19 @@ table {
 }
 
 thead {
-    background: #555555;
+    background: #000000;
     color: white;
     font-weight: bold;
 }
 
 td, th {
-    border: 1px solid #000000;
+    border: 1px solid #C78BA7;
     padding: 8px 15px;
 }
 
 .mapa {
     padding: 3em 0;
-    background-color: linear-gradient(#FEFEFE, #888888);
+    background-color: linear-gradient(#C78BA7, #000000);
 }
 
 .mapa p {
@@ -271,19 +285,19 @@ td, th {
 /* SELETORES AVANÇADOS PARA SEREM USADOS
 
 main p {
-    background: red;
+    background: black;
 }
 
 main > p {
-    background: red; 
+    background: black; 
 }
 
 img + p { 
-    background: blue;
+    background: yellow;
 }
 
 img ~ p {
-    background: yellow
+    background: white
 } 
 
 .principal p:not(#missao) {
