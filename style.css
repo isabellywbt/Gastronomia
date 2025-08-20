@@ -120,29 +120,26 @@ nav a:hover {
     border-radius: 10px;
 }
 
-
 .produto li:hover {
     border-color: #ec94a1;
-.produto li:hover {
-    border-color: var(--cor-principal);
 }
 
-
-.produto li:active {
-    border-color: #ffd770;
-.produto li:active {
-    border-color: var(--cor-preto);
+.produtos li:active {
+    border-color: var(--cor-azulescuro);
 }
 
-.produto h2 {
+.produtos h2 {
     font-size: 30px;
     font-weight: bold;
 }
 
-.produto li:hover h2 {
+.produtos li:hover h2 {
     font-size: 34px;
 }
 
+.imagem-produtos {
+    width: 300px;
+}
 .produto-descricao {
     font-size: 18px;
 }
@@ -153,11 +150,10 @@ nav a:hover {
     margin-top: 10px;
 }
 
-.beneficios {
-    padding: 3em 0;
-    background: #ffffff;
-    background: var(--cor-secundaria);
-}
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
 
 .conteudo-beneficios {
     display: flex;
@@ -167,12 +163,12 @@ nav a:hover {
     margin: 0 auto;
 }
 
-.lista-beneficios {
-    list-style: none;
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
-}
+.conteudo-beneficios {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 640px;
+    margin: 0 auto;
 
 .itens {
     line-height: 1.5;
@@ -189,8 +185,8 @@ nav a:hover {
 .imagem-beneficios {
     width: 60%;
     opacity: 1;
+    transition: 400ms;
     box-shadow: 10px 10px 10px 0 var(--cor-preto);
-    box-shadow: 10px 10px 10px 0 #000000;
 }
 
 .imagem-beneficios:hover {
@@ -228,15 +224,16 @@ form input {
 
 footer {
     text-align: center;
-    background: #ffffff;
+    background: #313030;
     padding: 0 0;
 }
 
 .logofooter {
     width: 50%;
 }
-
-color: var(--cor-branco);
+    
+.copyright {
+    color: var(--cor-branco);
     font-size: 13px;
     margin: 10px 0 0;
 }
@@ -244,9 +241,15 @@ color: var(--cor-branco);
 .enviar {
     width: 40%;
     padding: 15px 0;
-     background: var(--cor-principal);
-    color: var(--cor-branco);
     background: var(--cor-principal);
+    color: var(--cor-branco);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}terminar
     color: var(--cor-branco);
     font-weight: bold;
     font-size: 18px;
