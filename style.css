@@ -8,31 +8,55 @@
     --cor-branco:#ffffff;
     --cor-preto:#000000;
     }
-
+/* Remova a cor de fundo do body, se ela estiver aqui */
 body {
     font-family: 'Montserrat', sans-serif;
+    /* Certifique-se de que não haja "background-color" ou "background" aqui */
+}
+
+/* Adicione este novo bloco no seu style.css, de preferência no final */
+.produtos-page {
+    background-image: url("img/grabemos-redes.sociais.avif"); /* Adicione a imagem aqui */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-attachment: fixed; /* Opcional: faz a imagem ficar parada ao rolar a página */
+}
+
+/* Adicione esta nova regra para a página de contato */
+.contato-page {
+    background-color: #ffffff;
 }
 
 header {
-    background: #ffffff;
+    background: var(--cor-rosa);
     padding: 20px 0;
+}
+
+.logo-da-header {
+    width: 20vw;
+}
+
+.logo-Branco {
+    width: 20vw;
 }
 
 .banner {
     width: 100%;
+    height: 450px;
 }
 
 .titulo-principal {
     text-align: center;
     font-size: 2em;
-    margin: 0 0 1em;
+    margin: 0 0 1.25em;
     clear: left;
-    width: 100%;
+    height: 10%;
 }
 
 .principal {
-    padding: 3em 0;
-    background: var(--cor-branco);
+    padding: 5em 0;
+    background: #ffffff;
     width: 940px;
     margin: 0 auto;
 }
@@ -60,26 +84,13 @@ header {
 }
 
 .caixa {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
     width: 940px;
     margin: 0 auto;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-.header-logo {
-    width: 90px;
-    margin-right: 10px;
-}
-
 nav {
+    position: absolute;
     top: 110px;
     right: 0;
 }
@@ -91,24 +102,42 @@ nav li {
 
 nav a {
     text-transform: uppercase;
-    color: var(--cor-preto);
+    color: #000000;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+    transition: color 0.3s ease;
+    /* Adicionei a transição para suavizar a mudança de cor */
 }
 
-nav a:hover {
-    color: var(--cor-principal);
+/* Regras de hover para as cores individuais */
+.menu-home a:hover {
+    color: #ffa392;
+    /* pessego */
     text-decoration: underline;
 }
 
-.produto {
+.menu-produtos a:hover {
+    color: #ffba7f;
+    /* laranja */
+    text-decoration: underline;
+}
+
+.menu-contato a:hover {
+    color: #ffd770;
+    /* Amarelo */
+    text-decoration: underline;
+}
+
+/* ESTILIZAÇÃO DOS PRODUTOS */
+
+.produtos {
     width: 940px;
     margin: 0 auto;
     padding: 50px 0;
 }
 
-.produto li {
+.produtos li {
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -118,14 +147,31 @@ nav a:hover {
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
+    /* Transição para os efeitos */
+    transition: box-shadow 0.5s ease;
 }
 
-.produto li:hover {
-    border-color: #ec94a1;
+.produtos li:hover {
+    /* Efeito de "mudar de cor" para a borda */
+    border: 2px solid transparent; /* Torna a borda transparente */
+    box-shadow: 
+        0 0 10px 5px var(--cor-principal), 
+        0 0 20px 10px var(--cor-rosa), 
+        0 0 30px 15px var(--cor-amarelo),
+        0 0 40px 20px var(--cor-escuro),
+        0 0 50px 25px var(--cor-secundaria); /* Mais cores para o efeito */
 }
 
 .produtos li:active {
-    border-color: var(--cor-azulescuro);
+    /* O efeito roxo fica maior quando clicado */
+    border: 2px solid transparent; /* Mantém a borda transparente para o efeito */
+    box-shadow: 0 0 50px 20px #C78BA7; /* Roxo mais forte e espalhado */
+}
+
+/* Para remover o sublinhado e manter a cor do texto */
+.produtos li a {
+    text-decoration: none;
+    color: black;
 }
 
 .produtos h2 {
@@ -137,9 +183,6 @@ nav a:hover {
     font-size: 34px;
 }
 
-.imagem-produtos {
-    width: 300px;
-}
 .produto-descricao {
     font-size: 18px;
 }
@@ -150,25 +193,23 @@ nav a:hover {
     margin-top: 10px;
 }
 
-.produto-preco {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
+main {}
+
+.beneficios {
+    padding: 3em 0;
+    background: #ffffff
+}
 
 .conteudo-beneficios {
-    display: flex;
-    align-items: center;
-    gap: 20px;
     width: 640px;
     margin: 0 auto;
 }
 
-.conteudo-beneficios {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 640px;
-    margin: 0 auto;
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
 
 .itens {
     line-height: 1.5;
@@ -183,39 +224,43 @@ nav a:hover {
 }
 
 .imagem-beneficios {
-    width: 60%;
+    width: 416px;
     opacity: 1;
     transition: 400ms;
-    box-shadow: 10px 10px 10px 0 var(--cor-preto);
+    box-shadow: 10px 10px 10px 0 #000000;
 }
 
-.imagem-beneficios:hover {
-    opacity: 0.3;
+.imagem-beneficios {
+    opacity: 0.8;
 }
 
-form {
-    margin: 40px 0;
+.form-center {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    width: 100%;
 }
 
-form label,
-form legend {
+.form-center label,
+.form-center legend {
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0 0 10px;
 }
 
-form input {
-    display: block;
+.form-center input {
+    display: inline-block;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 50%;
+    width: auto;
 }
 
-.input-padrao {
-    display: block;
+.form-center .input-padrao {
+    background-color: var();
+    display: inline-block;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 50%;
+    width: 100%;
 }
 
 .checkbox {
@@ -224,33 +269,22 @@ form input {
 
 footer {
     text-align: center;
-    background: #313030;
-    padding: 0 0;
+    background: url("img/bg.jpg");
+    padding: 40px 0;
+    background: var(--cor-secundaria);
 }
 
-.logofooter {
-    width: 50%;
-}
-    
 .copyright {
-    color: var(--cor-branco);
-    font-size: 13px;
-    margin: 10px 0 0;
+    color: #000000;
+    font-size: 16px;
+    margin: 20px 0 0;
 }
 
 .enviar {
     width: 40%;
     padding: 15px 0;
-    background: var(--cor-principal);
-    color: var(--cor-branco);
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer;
-}terminar
-    color: var(--cor-branco);
+    background: var(--cor-rosa);
+    color: white;
     font-weight: bold;
     font-size: 18px;
     border: none;
@@ -260,7 +294,7 @@ footer {
 }
 
 .enviar:hover {
-    background: darkorange;
+    background: var(--cor-rosa);
     transform: scale(1.2);
 }
 
@@ -270,18 +304,19 @@ table {
 
 thead {
     background: #ffffff;
-    color: white;
+    color: #C78BA7;
     font-weight: bold;
 }
 
-td, th {
-    border: 1px solid #C78BA7;
+td,
+th {
+    border: 1px solid #000000;
     padding: 8px 15px;
 }
 
 .mapa {
     padding: 3em 0;
-    background-color: linear-gradient(#ffffff, #C78BA7);
+    background-color: linear-gradient(#f9f871, #000);
 }
 
 .mapa p {
@@ -290,11 +325,8 @@ td, th {
 }
 
 .mapa-conteudo {
-    width: 940px;
+    width: fit-content;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .video {
@@ -306,29 +338,34 @@ td, th {
 /* SELETORES AVANÇADOS PARA SEREM USADOS
 
 main p {
-    background: red;
+    background: pink;
 }
 
 main > p {
-    background: red; 
+    background: pink; 
 }
 
 img + p { 
-    background: blue;
+    background: yellow;
 }
 
 img ~ p {
-    background: yellow
+    background: orange
 } 
 
 .principal p:not(#missao) {
-    background: orange;
+    background: white;
 }
 
 */
 
 @media screen and (max-width: 480px) {
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+
+    .caixa,
+    .principal,
+    .conteudo-beneficios,
+    .mapa-conteudo,
+    .video {
         width: auto;
     }
 
@@ -340,7 +377,17 @@ img ~ p {
         position: static;
     }
 
-    .lista-beneficios, .imagem-beneficios {
+    .lista-beneficios,
+    .imagem-beneficios {
         width: 100%;
     }
-~
+}
+
+.table-container {
+    display: flex;
+    /* Use flexbox para facilitar a centralização */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente (opcional, mas boa prática) */
+}
