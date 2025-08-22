@@ -335,7 +335,6 @@ th {
 }
 
 
-/* SELETORES AVANÇADOS PARA SEREM USADOS
 
 main p {
     background: pink;
@@ -384,10 +383,28 @@ img ~ p {
 }
 
 .table-container {
-    display: flex;
-    /* Use flexbox para facilitar a centralização */
+    display: flex;  
     justify-content: center;
-    /* Centraliza o conteúdo horizontalmente */
     align-items: center;
-    /* Centraliza o conteúdo verticalmente (opcional, mas boa prática) */
+    
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.produtos li {
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.imagem-produto {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
