@@ -2,28 +2,25 @@
     /* cores personalisadas */
     --cor-principal:#C78BA7;
     --cor-rosa:#ec94a1;
-    --secundaria:#ffa392;
+    --cor-secundaria:#ffa392;
     --cor-laranja:#ffd770;
     --cor-amarelo:#f9f871;
     --cor-branco:#ffffff;
     --cor-preto:#000000;
-    }
-/* Remova a cor de fundo do body, se ela estiver aqui */
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
-    /* Certifique-se de que não haja "background-color" ou "background" aqui */
 }
 
-/* Adicione este novo bloco no seu style.css, de preferência no final */
 .produtos-page {
-    background-image: url("img/grabemos-redes.sociais.avif"); /* Adicione a imagem aqui */
-    background-size: cover; /* Faz a imagem cobrir todo o fundo */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    background-position: center; /* Centraliza a imagem no fundo */
-    background-attachment: fixed; /* Opcional: faz a imagem ficar parada ao rolar a página */
+    background-image: url("img/grabemos-redes.sociais.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* Adicione esta nova regra para a página de contato */
 .contato-page {
     background-color: #ffffff;
 }
@@ -107,29 +104,22 @@ nav a {
     font-size: 22px;
     text-decoration: none;
     transition: color 0.3s ease;
-    /* Adicionei a transição para suavizar a mudança de cor */
 }
 
-/* Regras de hover para as cores individuais */
 .menu-home a:hover {
     color: #ffa392;
-    /* pessego */
     text-decoration: underline;
 }
 
 .menu-produtos a:hover {
     color: #ffba7f;
-    /* laranja */
     text-decoration: underline;
 }
 
 .menu-contato a:hover {
     color: #ffd770;
-    /* Amarelo */
     text-decoration: underline;
 }
-
-/* ESTILIZAÇÃO DOS PRODUTOS */
 
 .produtos {
     width: 940px;
@@ -147,28 +137,24 @@ nav a {
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
-    /* Transição para os efeitos */
     transition: box-shadow 0.5s ease;
 }
 
 .produtos li:hover {
-    /* Efeito de "mudar de cor" para a borda */
-    border: 2px solid transparent; /* Torna a borda transparente */
+    border: 2px solid transparent;
     box-shadow: 
         0 0 10px 5px var(--cor-principal), 
         0 0 20px 10px var(--cor-rosa), 
         0 0 30px 15px var(--cor-amarelo),
-        0 0 40px 20px var(--cor-escuro),
-        0 0 50px 25px var(--cor-secundaria); /* Mais cores para o efeito */
+        0 0 40px 20px var(--cor-preto),
+        0 0 50px 25px var(--cor-secundaria);
 }
 
 .produtos li:active {
-    /* O efeito roxo fica maior quando clicado */
-    border: 2px solid transparent; /* Mantém a borda transparente para o efeito */
-    box-shadow: 0 0 50px 20px #C78BA7; /* Roxo mais forte e espalhado */
+    border: 2px solid transparent;
+    box-shadow: 0 0 50px 20px #C78BA7;
 }
 
-/* Para remover o sublinhado e manter a cor do texto */
 .produtos li a {
     text-decoration: none;
     color: black;
@@ -334,32 +320,27 @@ th {
     margin: 2em auto;
 }
 
-
-
 main p {
-    background: pink;
+    background: pink;
 }
 
 main > p {
-    background: pink; 
+    background: pink; 
 }
 
 img + p { 
-    background: yellow;
+    background: yellow;
 }
 
 img ~ p {
-    background: orange
+    background: orange
 } 
 
 .principal p:not(#missao) {
-    background: white;
+    background: white;
 }
 
-*/
-
 @media screen and (max-width: 480px) {
-
     .caixa,
     .principal,
     .conteudo-beneficios,
@@ -386,7 +367,7 @@ img ~ p {
     display: flex;  
     justify-content: center;
     align-items: center;
-    
+}
 
 .produtos {
   display: flex;
@@ -405,6 +386,8 @@ img ~ p {
 
 .imagem-produto {
   width: 100%;
-  height: auto;
+  height: 200px;
   object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
