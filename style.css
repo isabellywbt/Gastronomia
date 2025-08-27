@@ -1,3 +1,6 @@
+@import url(/styles/header.css);
+@import url(/styles/footer.css);
+
 :root {
     /* cores personalisadas */
     --cor-principal:#C78BA7;
@@ -13,7 +16,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.produtos-page {
     background-image: url("img/grabemos-redes.sociais.avif");
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,15 +25,6 @@ body {
 
 .contato-page {
     background-color: #ffffff;
-}
-
-header {
-    background: var(--cor-rosa);
-    padding: 20px 0;
-}
-
-.logo-da-header {
-    width: 20vw;
 }
 
 .logo-Branco {
@@ -78,12 +71,6 @@ header {
 
 .imagembeneficios {
     width: 60%;
-}
-
-.caixa {
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
 }
 
 nav {
