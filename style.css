@@ -16,13 +16,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-    background-image: url("img/grabemos-redes.sociais.avif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 .contato-page {
     background-color: #ffffff;
 }
@@ -166,8 +159,6 @@ nav a {
     margin-top: 10px;
 }
 
-main {}
-
 .beneficios {
     padding: 3em 0;
     background: #ffffff
@@ -239,14 +230,6 @@ main {}
 .checkbox {
     margin: 20px 0;
 }
-
-footer {
-    text-align: center;
-    background: url("img/bg.jpg");
-    padding: 40px 0;
-    background: var(--cor-secundaria);
-}
-
 .copyright {
     color: #000000;
     font-size: 16px;

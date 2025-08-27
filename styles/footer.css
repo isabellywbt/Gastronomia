@@ -1,0 +1,15 @@
+footer {
+    text-align: center;
+    background: #313030;
+    padding: 0 0;
+}
+
+.logofooter {
+    width: 100%;
+}
+
+.copyright {
+    color: var(--cor-branco);
+    font-size: 13px;
+    margin: 10px 0 0;
+}
