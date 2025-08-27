@@ -16,30 +16,23 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.contato-page {
-    background-color: #ffffff;
-}
 
-.logo-Branco {
-    width: 20vw;
-}
 
 .banner {
     width: 100%;
-    height: 450px;
 }
 
 .titulo-principal {
     text-align: center;
     font-size: 2em;
-    margin: 0 0 1.25em;
+    margin: 0 0 1em;
     clear: left;
-    height: 10%;
+    width: 100%;
 }
 
 .principal {
-    padding: 5em 0;
-    background: #ffffff;
+    padding: 3em 0;
+    background: var(--cor-rosa);
     width: 940px;
     margin: 0 auto;
 }
@@ -66,40 +59,9 @@ body {
     width: 60%;
 }
 
-nav {
-    position: absolute;
-    top: 110px;
-    right: 0;
-}
 
-nav li {
-    display: inline;
-    margin: 0 0 0 15px;
-}
 
-nav a {
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
 
-.menu-home a:hover {
-    color: #ffa392;
-    text-decoration: underline;
-}
-
-.menu-produtos a:hover {
-    color: #ffba7f;
-    text-decoration: underline;
-}
-
-.menu-contato a:hover {
-    color: #ffd770;
-    text-decoration: underline;
-}
 
 .produtos {
     width: 940px;
@@ -117,27 +79,14 @@ nav a {
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
-    transition: box-shadow 0.5s ease;
 }
 
 .produtos li:hover {
-    border: 2px solid transparent;
-    box-shadow: 
-        0 0 10px 5px var(--cor-principal), 
-        0 0 20px 10px var(--cor-rosa), 
-        0 0 30px 15px var(--cor-amarelo),
-        0 0 40px 20px var(--cor-preto),
-        0 0 50px 25px var(--cor-secundaria);
+    border-color: var(--cor-principal);
 }
 
 .produtos li:active {
-    border: 2px solid transparent;
-    box-shadow: 0 0 50px 20px #C78BA7;
-}
-
-.produtos li a {
-    text-decoration: none;
-    color: black;
+    border-color: var(--cor-principal);
 }
 
 .produtos h2 {
@@ -149,6 +98,9 @@ nav a {
     font-size: 34px;
 }
 
+.imagem-produtos {
+    width: 300px;
+}
 .produto-descricao {
     font-size: 18px;
 }
@@ -161,15 +113,19 @@ nav a {
 
 .beneficios {
     padding: 3em 0;
-    background: #ffffff
+    background: var(--cor-secundaria);
 }
 
 .conteudo-beneficios {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     width: 640px;
     margin: 0 auto;
 }
 
 .lista-beneficios {
+    list-style: none;
     width: 40%;
     display: inline-block;
     vertical-align: top;
@@ -188,14 +144,14 @@ nav a {
 }
 
 .imagem-beneficios {
-    width: 416px;
+    width: 60%;
     opacity: 1;
     transition: 400ms;
-    box-shadow: 10px 10px 10px 0 #000000;
+    box-shadow: 10px 10px 10px 0 var(--cor-preto);
 }
 
-.imagem-beneficios {
-    opacity: 0.8;
+.imagem-beneficios:hover {
+    opacity: 0.3;
 }
 
 .form-center {
@@ -220,7 +176,6 @@ nav a {
 }
 
 .form-center .input-padrao {
-    background-color: var();
     display: inline-block;
     margin: 0 0 20px;
     padding: 10px 25px;
@@ -230,17 +185,16 @@ nav a {
 .checkbox {
     margin: 20px 0;
 }
-.copyright {
-    color: #000000;
-    font-size: 16px;
-    margin: 20px 0 0;
-}
+
+
+
+
 
 .enviar {
     width: 40%;
     padding: 15px 0;
-    background: var(--cor-rosa);
-    color: white;
+    background: var(--cor-principal);
+    color: var(--cor-branco);
     font-weight: bold;
     font-size: 18px;
     border: none;
@@ -250,7 +204,7 @@ nav a {
 }
 
 .enviar:hover {
-    background: var(--cor-rosa);
+    background: darkorchid;
     transform: scale(1.2);
 }
 
@@ -259,20 +213,19 @@ table {
 }
 
 thead {
-    background: #ffffff;
-    color: #C78BA7;
+    background: #ffa392;
+    color: white;
     font-weight: bold;
 }
 
-td,
-th {
+td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
 }
 
 .mapa {
     padding: 3em 0;
-    background-color: linear-gradient(#f9f871, #000);
+    background-color: linear-gradient(#ffffff, #f9f871);
 }
 
 .mapa p {
@@ -281,8 +234,11 @@ th {
 }
 
 .mapa-conteudo {
-    width: fit-content;
+    width: 940px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .video {
@@ -290,32 +246,33 @@ th {
     margin: 2em auto;
 }
 
+
+/* SELETORES AVANÇADOS PARA SEREM USADOS
+
 main p {
-    background: pink;
+    background: red;
 }
 
 main > p {
-    background: pink; 
+    background: red; 
 }
 
 img + p { 
-    background: yellow;
+    background: blue;
 }
 
 img ~ p {
-    background: orange
+    background: yellow
 } 
 
 .principal p:not(#missao) {
-    background: white;
+    background: orange;
 }
 
+*/
+
 @media screen and (max-width: 480px) {
-    .caixa,
-    .principal,
-    .conteudo-beneficios,
-    .mapa-conteudo,
-    .video {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
         width: auto;
     }
 
@@ -327,37 +284,9 @@ img ~ p {
         position: static;
     }
 
-    .lista-beneficios,
-    .imagem-beneficios {
+    .lista-beneficios, .imagem-beneficios {
         width: 100%;
     }
+
 }
 
-.table-container {
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-}
-
-.produtos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
-
-.produtos li {
-  flex: 1 1 250px;
-  max-width: 300px;
-  text-align: center;
-}
-
-.imagem-produto {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
