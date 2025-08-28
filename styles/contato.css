@@ -20,6 +20,7 @@
 }
 
 .form-center .input-padrao {
+    background-color: var();
     display: inline-block;
     margin: 0 0 20px;
     padding: 10px 25px;
@@ -33,8 +34,8 @@
 .enviar {
     width: 40%;
     padding: 15px 0;
-    background: var(--cor-principal);
-    color: var(--cor-branco);
+    background: var(--cor-rosa);
+    color: white;
     font-weight: bold;
     font-size: 18px;
     border: none;
@@ -44,7 +45,7 @@
 }
 
 .enviar:hover {
-    background: darkmagenta;
+    background: var(--cor-rosa);
     transform: scale(1.2);
 }
 
@@ -53,12 +54,13 @@ table {
 }
 
 thead {
-    background: #ec94ec;
-    color: white;
+    background: #ffffff;
+    color: #C78BA7;
     font-weight: bold;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #000000;
     padding: 8px 15px;
 }

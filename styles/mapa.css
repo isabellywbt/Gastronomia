@@ -1,6 +1,7 @@
+
 .mapa {
     padding: 3em 0;
-    background-color: linear-gradient(#ffffff, #ec94a1);
+    background-color: linear-gradient(#f9f871, #000);
 }
 
 .mapa p {
@@ -9,9 +10,6 @@
 }
 
 .mapa-conteudo {
-    width: 940px;
+    width: fit-content;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

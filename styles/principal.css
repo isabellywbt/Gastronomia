@@ -1,14 +1,14 @@
 .titulo-principal {
     text-align: center;
     font-size: 2em;
-    margin: 0 0 1em;
+    margin: 0 0 1.25em;
     clear: left;
-    width: 100%;
+    height: 10%;
 }
 
 .principal {
-    padding: 3em 0;
-    background: var(--cor-branco);
+    padding: 5em 0;
+    background: #ffffff;
     width: 940px;
     margin: 0 auto;
 }

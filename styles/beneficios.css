@@ -1,51 +1,62 @@
-.beneficios {
-    padding: 3em 0;
-    background: var(--cor-secundaria);
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Certifique-se de linkar seu arquivo de estilo principal -->
+    <link rel="stylesheet" href="beneficios.css"> <!-- Aqui você linka o arquivo específico dos Benefícios -->
+    <title>Benefícios - Restaurante Allure</title>
+</head>
+<body>
 
-.imagembeneficios {
-    width: 60%;
-}
+    <!-- Cabeçalho -->
+    <header>
+        <div class="caixa">
+            <h1 class="logo"><img class="logo-da-header" src="img/logo.jpg" alt="Logo"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-.conteudo-beneficios {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 640px;
-    margin: 0 auto;
-}
+    <main>
 
-.lista-beneficios {
-    list-style: none;
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
-}
+        <section class="beneficios">
+            <h3 class="titulo-principal">Benefícios</h3>
+            <div class="conteudo-beneficios">
+                <!-- Lista de Benefícios -->
+                <ul class="lista-beneficios">
+                    <li class="itens">Atendimento acolhedor e personalizado</li>
+                    <li class="itens">Ambiente elegante e confortável</li>
+                    <li class="itens">Tradição e autenticidade na culinária italiana</li>
+                    <li class="itens">Pratos preparados com ingredientes frescos e selecionados</li>
+                    <li class="itens">Equipe apaixonada por gastronomia</li>
+                    <li class="itens">Busca constante pela excelência</li>
+                </ul>
+                <!-- Imagem dos Benefícios -->
+                <img src="img/beneficios.png" class="imagem-beneficios" alt="Benefícios do restaurante">
+            </div>
 
-.itens {
-    line-height: 1.5;
-}
+            <!-- Vídeo -->
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QklHYes1X90?si=LTae6pxn0qYOZBb0" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
 
-.itens:first-child {
-    font-weight: bold;
-}
+    </main>
 
-.itens:before {
-    content: "✓";
-}
+    <!-- Rodapé -->
+    <footer>
+        <img class="logo-branco" src="img/logo-branco.jpg" alt="Logo Branco">
+        <p class="copyright"><strong style="color: #000000;">&copy;</strong> Copyright Restaurante Allure - 2020</p>
+    </footer>
 
-.imagem-beneficios {
-    width: 60%;
-    opacity: 1;
-    transition: 400ms;
-    box-shadow: 10px 10px 10px 0 var(--cor-preto);
-}
-
-.imagem-beneficios:hover {
-    opacity: 0.3;
-}
-
-.video {
-    width: 560px;
-    margin: 2em auto;
-}
+</body>
+</html>

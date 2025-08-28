@@ -14,14 +14,26 @@
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
+    transition: box-shadow 0.5s ease;
 }
 
 .produtos li:hover {
-    border-color: var(--cor-principal);
+    border: 2px solid transparent;
+    box-shadow: 
+        0 0 10px 5px var(--cor-principal), 
+        0 0 20px 10px var(--cor-rosa), 
+        0 0 30px 15px var(--cor-amarelo),
+        0 0 40px 20px var(--cor-preto),
+        0 0 50px 25px var(--cor-secundaria);
 }
 
 .produtos li:active {
-    border-color: var(--cor-rosa);
+    border: 2px solid transparent;
+    box-shadow: 0 0 50px 20px #C78BA7;
+}
+.produtos li a {
+    text-decoration: none;
+    color: black;
 }
 
 .produtos h2 {
@@ -33,9 +45,6 @@
     font-size: 34px;
 }
 
-.imagem-produtos {
-    width: 300px;
-}
 .produto-descricao {
     font-size: 18px;
 }
