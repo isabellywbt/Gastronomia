@@ -1,3 +1,11 @@
+@import url(/styles/header.css);
+@import url(/styles/footer.css);
+@import url(/styles/produto.css);
+@import url(/styles/contato.css);
+@import url(/styles/beneficios.css);
+@import url(/styles/principal.css);
+@import url(/styles/mapa.css);
+
 :root {
     /* Cores personalizadas */
     --cor-principal: #C78BA7;
@@ -11,65 +19,52 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /* Não tem fundo global para evitar sobreposição no banner */
+
 }
 
-header {
-    background: var(--cor-rosa);
-    padding: 20px 0;
+.banner {
+    width: 100%;
 }
 
-.logo-da-header {
-    width: 150px;  /* Tamanho fixo para a logo */
-    height: auto;  /* Mantém a proporção da imagem */
+/* SELETORES AVANÇADOS PARA SEREM USADOS
+
+main p {
+    background: red;
 }
 
-.caixa {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 940px;  /* Ajuste fixo para centralizar no desktop */
-    margin: 0 auto;
+main > p {
+    background: red; 
 }
 
-nav {
-    top: 110px;
-    right: 0;
+img + p { 
+    background: blue;
 }
 
-nav ul {
-    display: grid;
-}
+img ~ p {
+    background: yellow
+} 
 
-nav li {
-    display: inline;
-    margin: 0 0 0 15px;
+.principal p:not(#missao) {
+    background: orange;
 }
+    
 
-nav a {
-    text-transform: uppercase;
-    color: var(--cor-branco);
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: var(--cor-escuro);
-    text-decoration: underline;
-}
-
-/* Estilização para Tablets (telas médias) */
-@media screen and (min-width: 480px) {
-    nav ul { 
-        display: inline;
+@media screen and (max-width: 480px) {
+        .video {
+        width: auto;
     }
-}
 
-/* Estilização para Desktop (telas maiores) */
-@media screen and (min-width: 1080px) {
-    .caixa {
-        width: 940px;
+    h1 {
+        text-align: center;
     }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+
 }
+    */
