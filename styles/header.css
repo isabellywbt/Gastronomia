@@ -1,15 +1,70 @@
-<header>
-	<div class="caixa">
-		<h1 class="logo"> 
-			<img class="logo-da-header" src="img/logo.jpg"> 
-		</h1>
+header {
+    color: var(--cor-principal) ;
+    padding: 20px 0;
+}
 
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="produtos.html">Produtos</a></li>
-				<li><a href="contato.html">Contato</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
+.caixa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header-logo {
+    width: 100px;
+    margin-right: 10px;
+}
+#nome_empresa {
+    display: none;
+}
+
+nav {
+    top: 110px;
+    right: 0;
+}
+nav ul {
+    display: grid;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: var(--cor-branco);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--cor-escuro);
+    text-decoration: underline;
+}
+
+/* Estilização para Tablets (telas médias)    */
+@media screen and (min-width: 480px) {
+    #nome_empresa {
+        display: flex;
+    }
+    nav ul { 
+        display: inline;
+    }
+}
+
+/* Estilização para Desktop (telas maiores)   */
+@media screen and (min-width: 1080px) {
+    .caixa {
+        width: 940px;
+    }
+}
