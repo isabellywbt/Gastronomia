@@ -1,32 +1,17 @@
 :root {
-    /* cores personalisadas */
-    --cor-principal:#C78BA7;
-    --cor-rosa:#ec94a1;
-    --cor-secundaria:#ffa392;
-    --cor-laranja:#ffd770;
-    --cor-amarelo:#f9f871;
-    --cor-branco:#ffffff;
-    --cor-preto:#000000;
-    }
+    /* Cores personalizadas */
+    --cor-principal: #C78BA7;
+    --cor-rosa: #ec94a1;
+    --cor-secundaria: #ffa392;
+    --cor-laranja: #ffd770;
+    --cor-amarelo: #f9f871;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /* Certifique-se de que não haja "background-color" ou "background" aqui */
-}
-
-/* Adicione este novo bloco no seu style.css, de preferência no final */
-.produtos-page {
-    background-image: url("img/grabemos-redes.sociais.avif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-
-    .contato-page {
-    background-color: #ffffff;
-}
-.contato-page {
-    background-color: #ffffff;
+    /* Não tem fundo global para evitar sobreposição no banner */
 }
 
 header {
@@ -35,32 +20,26 @@ header {
 }
 
 .logo-da-header {
-    width: 20vw;
-}
-
-.logo-Branco {
-    width: 20vw;
-}
-
-.banner {
-    width: 100%;
-    height: 450px;
-}
-
-.imagembeneficios {
-    width: 60%;
+    width: 150px;  /* Tamanho fixo para a logo */
+    height: auto;  /* Mantém a proporção da imagem */
 }
 
 .caixa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
-    width: 940px;
+    width: 940px;  /* Ajuste fixo para centralizar no desktop */
     margin: 0 auto;
 }
 
 nav {
-    position: absolute;
     top: 110px;
     right: 0;
+}
+
+nav ul {
+    display: grid;
 }
 
 nav li {
@@ -70,102 +49,27 @@ nav li {
 
 nav a {
     text-transform: uppercase;
-    color: #000000;
+    color: var(--cor-branco);
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
-.menu-home a:hover {
-    color: #ffa392;
+
+nav a:hover {
+    color: var(--cor-escuro);
     text-decoration: underline;
 }
 
-.menu-produtos a:hover {
-    color: #ffba7f;
-    text-decoration: underline;
-}
-
-.menu-contato a:hover {
-    color: #ffd770;
-    text-decoration: underline;
-}
-
-main {}
-
-
-.video {
-    width: 560px;
-    margin: 2em auto;
-}
-
-main p {
-    background: pink;
-}
-
-main > p {
-    ackground: pink; 
-}
-
-img + p { 
-    background: yellow;
-}
-
-img ~ p {
-    background: orange
-} 
-
-.principal p:not(#missao) {
-    background: white;
-}
-@media screen and (max-width: 480px) {
-.caixa,
-    .principal,
-    .conteudo-beneficios,
-    .mapa-conteudo,
-    .video {
-        width: auto;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    nav {
-        position: static;
-    }
-
-    .lista-beneficios,
-    .imagem-beneficios {
-        width: 100%;
+/* Estilização para Tablets (telas médias) */
+@media screen and (min-width: 480px) {
+    nav ul { 
+        display: inline;
     }
 }
 
-.table-container {
-    display: flex;  
-    justify-content: center;
-    align-items: center;
+/* Estilização para Desktop (telas maiores) */
+@media screen and (min-width: 1080px) {
+    .caixa {
+        width: 940px;
     }
-
-.produtos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
-
-.produtos li {
-  flex: 1 1 250px;
-  max-width: 300px;
-  text-align: center;
-}
-
-.imagem-produto {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
 }
