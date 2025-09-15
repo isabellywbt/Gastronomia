@@ -221,23 +221,23 @@ main {}
 }
 
 .form-center {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 30px;
+    max-width: 600 px;
+    margin: 40 px auto;
+    padding: 30 px;
     width: 100%;
 }
 
 .form-center label,
 .form-center legend {
     display: block;
-    font-size: 16px;
-    margin: 0 0 10px;
+    font-size: 16 px;
+    margin: 0 0 10 px;
 }
 
 .form-center input {
     display: inline-block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
+    margin: 0 0 20 px;
+    padding: 10 px 25 px;
     width: auto;
 }
 
@@ -246,7 +246,7 @@ main {}
     display: inline-block;
     margin: 0 0 20 px;
     padding: 10 px 25 px;
-    width: 100 %;
+    width: 100%;
 }
 
 .checkbox {
